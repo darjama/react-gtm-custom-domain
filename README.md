@@ -5,7 +5,7 @@
 # react-gtm-module
 ### React Google Tag Manager Module
 
-This is a Javascript module to [React](https://facebook.github.io/react/) based apps that implement Google Tag Manager. It is designed to use [GTM](https://developers.google.com/tag-manager/quickstart) snippet.
+This is a Javascript module to [React](https://facebook.github.io/react/) based apps that implement Google Tag Manager. It is based on the [react-gtm-module](https://www.npmjs.com/package/react-gtm-module) and is designed to use [GTM](https://developers.google.com/tag-manager/quickstart) snippet.
 
 You can easily use custom dataLayer, multiple dataLayers and additional events.
 
@@ -14,7 +14,7 @@ You can easily use custom dataLayer, multiple dataLayers and additional events.
 [npm](https://www.npmjs.com/):
 
 ```bash
-npm install react-gtm-module --save
+npm install react-gtm-module-custom-domain --save
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module-custom-domain'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000'
@@ -53,10 +53,11 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module-custom-domain'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000',
+    customURL: 'http://example.com/gtm.js',
     dataLayer: {
         userId: '001',
         userProject: 'project'
@@ -85,7 +86,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module-custom-domain'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000',
@@ -106,7 +107,7 @@ And send your data in each page you want
 import React from 'react'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module-custom-domain'
 
 const tagManagerArgs = {
     dataLayer: {
@@ -146,7 +147,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module-custom-domain'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000',
@@ -175,7 +176,7 @@ import Router from 'react-router'
 import routes from './routes'
 
 ...
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module-custom-domain'
 
 const tagManagerArgs = {
     gtmId: 'GTM-000000',
@@ -191,7 +192,7 @@ TagManager.initialize(tagManagerArgs)
 Go to Google Tag Manager -> ADMIN -> Environments -> Actions -> Get Snippet.
 Look for gtm_auth and gtm_preview
 
-##### Don't know to use GTM environments? 
+##### Don't know to use GTM environments?
    - https://support.google.com/tagmanager/answer/6311518
    - https://www.simoahava.com/analytics/better-qa-with-google-tag-manager-environments/
 
@@ -205,6 +206,7 @@ Look for gtm_auth and gtm_preview
 |events| `Object`| No | Additional events such as 'gtm.start': new Date().getTime(),event:'gtm.js'.|
 |auth| `String` | No | used to set environments. |
 |preview| `String` | No | used to set environments, something like `env-00`. |
+|customURL| `String` | No | used to custom domain URL, something like `http://example.com/gtm.js`. |
 
 
 ### Note:
