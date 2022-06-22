@@ -29,14 +29,15 @@ const TagManager = {
       dataScript
     }
   },
-  initialize: function ({ gtmId, events = {}, dataLayer, dataLayerName = 'dataLayer', auth = '', preview = '' }) {
+  initialize: function ({ gtmId, events = {}, dataLayer, dataLayerName = 'dataLayer', auth = '', preview = '', customURL = '' }) {
     const gtm = this.gtm({
       id: gtmId,
       events: events,
       dataLayer: dataLayer || undefined,
       dataLayerName: dataLayerName,
       auth,
-      preview
+      preview,
+      customURL
     })
     if (dataLayer) document.head.appendChild(gtm.dataScript)
     document.head.insertBefore(gtm.script(), document.head.childNodes[0])
