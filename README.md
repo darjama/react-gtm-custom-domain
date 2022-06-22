@@ -2,8 +2,8 @@
 [![npm version](https://img.shields.io/npm/v/react-gtm-module.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module)
 [![npm downloads](https://img.shields.io/npm/dm/react-gtm-module.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module)
 
-# react-gtm-module
-### React Google Tag Manager Module
+# react-gtm-module-custom-domain
+### React Google Tag Manager Module for Custom Domains
 
 This is a Javascript module to [React](https://facebook.github.io/react/) based apps that implement Google Tag Manager. It is based on the [react-gtm-module](https://www.npmjs.com/package/react-gtm-module) and is designed to use [GTM](https://developers.google.com/tag-manager/quickstart) snippet.
 
