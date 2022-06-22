@@ -1,7 +1,7 @@
 {
-  "name": "react-gtm-module",
+  "name": "react-gtm-module-custom-domain",
   "version": "2.0.11",
-  "description": "React Google Tag Manager Module",
+  "description": "React Google Tag Manager for Custom Domains",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alinemorelli/react-gtm"
+    "url": "https://github.com/darjama/react-gtm-custom-domain"
   },
   "author": {
-    "name": "Aline Morelli",
-    "email": "aline.morelliw@gmail.com",
-    "url": "https://github.com/alinemorelli"
+    "name": "Daryl Marco",
+    "email": "darmarco@gmail.com",
+    "url": "https://github.com/darjama"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alinemorelli/react-gtm/issues"
+    "url": "https://github.com/darjama/react-gtm-custom-domain/issues"
   },
   "homepage": "",
   "keywords": [
