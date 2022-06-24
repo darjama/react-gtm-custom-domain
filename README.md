@@ -1,5 +1,5 @@
-[![npm version](https://img.shields.io/npm/v/react-gtm-module.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module-custom-domain)
-[![npm downloads](https://img.shields.io/npm/dm/react-gtm-module.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module-custom-domain)
+[![npm version](https://img.shields.io/npm/v/react-gtm-module-custom-domain.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module-custom-domain)
+[![npm downloads](https://img.shields.io/npm/dm/rreact-gtm-module-custom-domain.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module-custom-domain)
 
 # react-gtm-module-custom-domain
 ### React Google Tag Manager Module for Custom Domains
